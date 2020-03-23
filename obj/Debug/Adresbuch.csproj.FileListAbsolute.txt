@@ -1,0 +1,10 @@
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Adresbuch.exe.config
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Adresbuch.exe
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Adresbuch.pdb
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.csprojAssemblyReference.cache
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.Startseite.resources
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.Properties.Resources.resources
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.csproj.GenerateResource.cache
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.exe
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.pdb
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.Hinzufuegen.resources
