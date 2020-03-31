@@ -14,26 +14,27 @@ namespace Praktiku
 
     public class Datenbankverbindung
     {
-        string connectionstring = "Server='localhost'; Database='Adressbuch'; Uid='root'; pwd='Sobachka-1'";
+        string connectionstring = "Server='localhost'; Database='Adressbuchprogramm'; Uid='root'; pwd='gaba89li'";
         MySqlConnection connection;
         public Datenbankverbindung()
         {
             connection = new MySqlConnection(connectionstring);
         }
 
-        public void FirmaInDatenbankHinzufuegen(string Firmenname, int BewerbungTelefonnummer, string BewerbungEMailadresse, string Hinweise, string Porstleitzahl, string Ort, string Strasse, string Hausnummer, string Land)
+        public void FirmaInDatenbankHinzufuegen(string Vorname, int Nachname, string Strasse, string Hausnummer, string Postleitzahl, string Ort, string EMailadresse, string Telefonnummer, string Handynummer, string Anmerkungen)
         {
-            //MySqlParameter mySqlParameter = new MySqlParameter("Firmenname", Firmenname);
-            //MySqlParameter mySqlParameter1 = new MySqlParameter("BewerbungTelefonnummert", BewerbungTelefonnummer);
-            //MySqlParameter mySqlParameter2 = new MySqlParameter("BewerbungEMailadresse", BewerbungEMailadresse);
-            //MySqlParameter mySqlParameter3 = new MySqlParameter("Hinweise", Hinweise);
-            //MySqlParameter mySqlParameter4 = new MySqlParameter("Porstleitzahl", Porstleitzahl);
-            //MySqlParameter mySqlParameter5 = new MySqlParameter("Ort", Ort);
-            //MySqlParameter mySqlParameter6 = new MySqlParameter("Strasse", Strasse);
-            //MySqlParameter mySqlParameter7 = new MySqlParameter("Hausnummer", Hausnummer);
-            //MySqlParameter mySqlParameter8 = new MySqlParameter("Land", Land);
-            //MySqlCommand query = new MySqlCommand("insert into firma (Firmenname,BewerbungTelefonnummer,BewerbungEMailadresse,Hinweise,Porstleitzahl,Ort,Straße,Hausnummer,Land ) values(@Firmenname,@BewerbungTelefonnummert,@BewerbungEMailadresse,@Hinweise, @Porstleitzahl,@Ort,@Strasse,@Hausnummer,@Land)", connection);
-            //query.Parameters.Add(mySqlParameter);
+            MySqlParameter mySqlParameter = new MySqlParameter("Vorname", Vorname);
+            MySqlParameter mySqlParameter1 = new MySqlParameter("Nachname", Nachname);
+            MySqlParameter mySqlParameter2 = new MySqlParameter("Strasse", Strasse);
+            MySqlParameter mySqlParameter3 = new MySqlParameter("Hausnummer", Hausnummer);
+            MySqlParameter mySqlParameter4 = new MySqlParameter("Postleitzahl", Postleitzahl);
+            MySqlParameter mySqlParameter5 = new MySqlParameter("Ort", Ort);
+            MySqlParameter mySqlParameter6 = new MySqlParameter("EMailadresse", EMailadresse);
+            MySqlParameter mySqlParameter7 = new MySqlParameter("Telefonnummer", Telefonnummer);
+            MySqlParameter mySqlParameter8 = new MySqlParameter("Handynummer", Handynummer);
+            MySqlParameter mySqlParameter9 = new MySqlParameter("Anmerkungen", Anmerkungen);
+            MySqlCommand query = new MySqlCommand("insert into firma (Vorname,Nachname,Strasse,Hausnummer,Postleitzahl,Ort,EMailadresse,Telefonnummer,Handynummer,Anmerkungen ) values(@Vorname,@Nachname,,@Strasse,@Hausnummer, @Postleitzahl,@Ort,@EMailadresse,@Handynummer,@Anmerkungen)", connection);
+            query.Parameters.Add(mySqlParameter);
             query.Parameters.Add(mySqlParameter1);
             query.Parameters.Add(mySqlParameter2);
             query.Parameters.Add(mySqlParameter3);
