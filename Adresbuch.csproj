@@ -68,6 +68,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adressbuchprogrammDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>adressbuchprogrammDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datenbankverbindung.cs" />
     <Compile Include="Hauptform.cs">
       <SubType>Form</SubType>
@@ -98,6 +103,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="adressbuchprogrammDataSet1.xsc">
+      <DependentUpon>adressbuchprogrammDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="adressbuchprogrammDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>adressbuchprogrammDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="adressbuchprogrammDataSet1.xss">
+      <DependentUpon>adressbuchprogrammDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

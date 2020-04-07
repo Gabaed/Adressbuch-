@@ -8,3 +8,12 @@ C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.csproj.Genera
 C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.exe
 C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.pdb
 C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.Hinzufuegen.resources
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Google.Protobuf.dll
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\MySql.Data.dll
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Renci.SshNet.dll
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Google.Protobuf.xml
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\MySql.Data.xml
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\bin\Debug\Renci.SshNet.xml
+C:\Users\Gaba\source\repos\Adresbuch\Adresbuch\obj\Debug\Adresbuch.csproj.CopyComplete

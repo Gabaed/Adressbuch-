@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtStrasse = new System.Windows.Forms.TextBox();
             this.txtHausnummer = new System.Windows.Forms.TextBox();
             this.txtOrt = new System.Windows.Forms.TextBox();
             this.txtPostleitzahl = new System.Windows.Forms.TextBox();
@@ -48,15 +48,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnHinzufuegen = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAnmerkungen = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtStrasse
             // 
-            this.textBox1.Location = new System.Drawing.Point(278, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtStrasse.Location = new System.Drawing.Point(278, 110);
+            this.txtStrasse.Name = "txtStrasse";
+            this.txtStrasse.Size = new System.Drawing.Size(100, 20);
+            this.txtStrasse.TabIndex = 0;
             // 
             // txtHausnummer
             // 
@@ -214,20 +214,20 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Notiz";
             // 
-            // textBox2
+            // txtAnmerkungen
             // 
-            this.textBox2.Location = new System.Drawing.Point(436, 178);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 88);
-            this.textBox2.TabIndex = 20;
+            this.txtAnmerkungen.Location = new System.Drawing.Point(436, 178);
+            this.txtAnmerkungen.Multiline = true;
+            this.txtAnmerkungen.Name = "txtAnmerkungen";
+            this.txtAnmerkungen.Size = new System.Drawing.Size(232, 88);
+            this.txtAnmerkungen.TabIndex = 20;
             // 
             // Hinzufuegen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtAnmerkungen);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnHinzufuegen);
             this.Controls.Add(this.label2);
@@ -247,10 +247,9 @@
             this.Controls.Add(this.txtOrt);
             this.Controls.Add(this.txtPostleitzahl);
             this.Controls.Add(this.txtHausnummer);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtStrasse);
             this.Name = "Hinzufuegen";
             this.Text = "Hinzufuegen";
-            this.Load += new System.EventHandler(this.Hinzufuegen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,7 +257,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtStrasse;
         private System.Windows.Forms.TextBox txtHausnummer;
         private System.Windows.Forms.TextBox txtOrt;
         private System.Windows.Forms.TextBox txtPostleitzahl;
@@ -278,6 +277,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnHinzufuegen;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAnmerkungen;
     }
 }

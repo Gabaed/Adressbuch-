@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+    
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +21,33 @@ namespace Adresbuch
 
         private void Hinzufuegen_Load(object sender, EventArgs e)
         {
+           
 
+         
         }
-
+       
         private void btnHinzufuegen_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Die angegebene Daten werde gespeichert. Sind sie sicher?");
+            Datenbankverbindung hinzufuegen = new Datenbankverbindung();
+
+            try
+            {
+                hinzufuegen.FirmaInDatenbankHinzufuegen(txtVorname.Text,
+                                                        txtNachname.Text,
+                                                        txtStrasse.Text,
+                                                        txtHausnummer.Text,
+                                                        txtPostleitzahl.Text,
+                                                        txtOrt.Text,
+                                                        txtEmailadress.Text,
+                                                         txtTelefonnummer.Text,
+                                                        txtHandynummer.Text,
+                                                        txtAnmerkungen.Text);
+
+            }
+            catch
+            {
+                MessageBox.Show("Die eigegeben Daten sind fehlerhaft!");
+            }
         }
     }
 }

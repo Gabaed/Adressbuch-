@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
-namespace Praktiku
+namespace Adresbuch
 {
 
 
@@ -21,7 +21,7 @@ namespace Praktiku
             connection = new MySqlConnection(connectionstring);
         }
 
-        public void FirmaInDatenbankHinzufuegen(string Vorname, int Nachname, string Strasse, string Hausnummer, string Postleitzahl, string Ort, string EMailadresse, string Telefonnummer, string Handynummer, string Anmerkungen)
+        public void FirmaInDatenbankHinzufuegen(string Vorname, string Nachname, string Strasse, string Hausnummer, string Postleitzahl, string Ort, string EMailadresse, string Telefonnummer, string Handynummer, string Anmerkungen)
         {
             MySqlParameter mySqlParameter = new MySqlParameter("Vorname", Vorname);
             MySqlParameter mySqlParameter1 = new MySqlParameter("Nachname", Nachname);
@@ -33,7 +33,7 @@ namespace Praktiku
             MySqlParameter mySqlParameter7 = new MySqlParameter("Telefonnummer", Telefonnummer);
             MySqlParameter mySqlParameter8 = new MySqlParameter("Handynummer", Handynummer);
             MySqlParameter mySqlParameter9 = new MySqlParameter("Anmerkungen", Anmerkungen);
-            MySqlCommand query = new MySqlCommand("insert into firma (Vorname,Nachname,Strasse,Hausnummer,Postleitzahl,Ort,EMailadresse,Telefonnummer,Handynummer,Anmerkungen ) values(@Vorname,@Nachname,,@Strasse,@Hausnummer, @Postleitzahl,@Ort,@EMailadresse,@Handynummer,@Anmerkungen)", connection);
+            MySqlCommand query = new MySqlCommand("insert into Adressbuchtabelle (Vorname,Nachname,Strasse,Hausnummer,Postleitzahl,Ort,EMailadresse,Telefonnummer,Handynummer,Anmerkungen) values(@Vorname,@Nachname,@Strasse,@Hausnummer, @Postleitzahl,@Ort,@EMailadresse,Telefonnummer,@Handynummer,@Anmerkungen)", connection);
             query.Parameters.Add(mySqlParameter);
             query.Parameters.Add(mySqlParameter1);
             query.Parameters.Add(mySqlParameter2);
@@ -43,6 +43,7 @@ namespace Praktiku
             query.Parameters.Add(mySqlParameter6);
             query.Parameters.Add(mySqlParameter7);
             query.Parameters.Add(mySqlParameter8);
+            query.Parameters.Add(mySqlParameter9);
 
             try
             {

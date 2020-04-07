@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="adressbuchprogrammDataSet" targetNamespace="http://tempuri.org/adressbuchprogrammDataSet.xsd" xmlns:mstns="http://tempuri.org/adressbuchprogrammDataSet.xsd" xmlns="http://tempuri.org/adressbuchprogrammDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="adressbuchprogrammConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="adressbuchprogrammConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Adresbuch.Properties.Settings.GlobalReference.Default.adressbuchprogrammConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="adressbuchtabelleTableAdapter" GeneratorDataComponentClassName="adressbuchtabelleTableAdapter" Name="adressbuchtabelle" UserDataComponentName="adressbuchtabelleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="adressbuchprogrammConnectionString1 (Settings)" DbObjectName="adressbuchprogramm.adressbuchtabelle" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Id`, `Vorname`, `Nachname`, `Strasse`, `Hausnummer`, `Ort`, `EMailadresse`, `Telefonnummer`, `Handynummer`, `Anmerkungen` FROM `adressbuchtabelle`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="adressbuchprogrammDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="adressbuchprogrammDataSet" msprop:Generator_UserDSName="adressbuchprogrammDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="adressbuchtabelle" msprop:Generator_TableClassName="adressbuchtabelleDataTable" msprop:Generator_TableVarName="tableadressbuchtabelle" msprop:Generator_TablePropName="adressbuchtabelle" msprop:Generator_RowDeletingName="adressbuchtabelleRowDeleting" msprop:Generator_RowChangingName="adressbuchtabelleRowChanging" msprop:Generator_RowEvHandlerName="adressbuchtabelleRowChangeEventHandler" msprop:Generator_RowDeletedName="adressbuchtabelleRowDeleted" msprop:Generator_UserTableName="adressbuchtabelle" msprop:Generator_RowChangedName="adressbuchtabelleRowChanged" msprop:Generator_RowEvArgName="adressbuchtabelleRowChangeEvent" msprop:Generator_RowClassName="adressbuchtabelleRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
